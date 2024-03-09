@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebHospital</title>
+
+    <link rel="stylesheet" href="./css-styles/output.css" />
+
+    <link rel="stylesheet" href="./css-styles/styles.css">
+    <script
+      src="https://kit.fontawesome.com/22d7a14c5e.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <!-- navbar 2 part- 
+        1st =>  white bg + right side logo + three sections + language dropdown 
+        2nd => blue bg, white text, 8 sub pages + search box -->
+
+    <nav class="navbar">
+      <nav class="bg-black border-gray-200 dark:bg-white">
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+        >
+          <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://media.istockphoto.com/id/1327030513/vector/letter-c-logo-design-template-with-gradient-color-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=FvRJtCkdierQNk0xjgdfSYyHay6_I4DwYnn8ythgeAc="
+              class="h-12"
+              alt="CompanyLogo" loading="lazy"
+            />
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-700"
+              >Company Logo</span
+            >
+          </a>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="" class="bk-consult">
+              <p class="text-gray-500 text-sm">Second Medical opinion</p>
+              <p class="text-amber-950 font-semibold">Book Consultation</p>
+            </a>
+          </div>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <i class="fa-solid fa-phone"></i>
+            <a href="" class="bk-consult">
+              <p class="text-gray-500 text-sm">Call Us On</p>
+              <p class="text-amber-950 font-semibold">987 654 123</p>
+            </a>
+          </div>
+          <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <i class="fa-solid fa-paper-plane"></i>
+            <a href="" class="bk-consult">
+              <p class="text-gray-500 text-sm">Email Us On</p>
+              <p class="text-amber-950 font-semibold">info@mediretreats.com</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav class="bg-gray-50 dark:bg-blue-500">
+        <div class="max-w-screen-xl px-3 py-3 mx-auto">
+          <div class="flex items-baseline">
+            <ul
+              class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >Treatments</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >Hospitals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-900 dark:text-white hover:underline"
+                  >Request A Quote</a
+                >
+              </li>
+            </ul>
+
+            <div class="flex-1 p-4">
+              <!-- Your search box goes here -->
+              <div class="relative text-white">
+                <input
+                  type="text"
+                  class="bg-blue-600 rounded-2xl h-16 pl-4 pr-10 py-2 w-full focus:outline-none placeholder:text-white"
+                  placeholder="Search..."
+                />
+                <button
+                  class="absolute right-2 top-1/2 transform -translate-y-1/2 text-white focus:outline-none"
+                >
+                  <!-- Your search icon or button goes here -->
+                  <div class="px-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+    <!-- knee poster -> 1) path, 2) H1, 3) para 4) enquire now button with blue bg, 5) image as a bg -->
+    <div
+      class="py-24 px-32 bg-cover bg-center bg-blue-600 text-white p-8 max-w-full text-center"
+      style="background-image: url('./images/breaking-bad-wallpaper.jpg')"
+    >
+      <h1 class="text-4xl font-bold mb-4">Total Knee replacement</h1>
+      <div class="">
+        <p class="text-lg mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded"
+        >
+          Enquire Now
+        </button>
+      </div>
+    </div>
+
+    <!-- second navbar like struct -->
+    <nav class="bg-white text-gray-800 p-4 m-10">
+      <ul class="flex space-x-4 items-center">
+        <li><a href="#overview" class="mx-4">Overview</a></li>
+        <li><a href="#Eligibility" class="mx-4">Eligibility</a></li>
+        <li><a href="#preparation" class="mx-4">Preparation</a></li>
+        <li><a href="#FAQ" class="mx-4">FAQs</a></li>
+        <li><a href="#patient" class="mx-4">Patient stories</a></li>
+        <li><a href="#GetInTouch" class="mx-4">Get In Touch</a></li>
+        <!-- Add more sections as needed -->
+
+        <!-- the active bar -->
+      </ul>
+      <!-- <div id="active-bar" class="w-7 h-1 bg-blue-500 transition-all duration-300"></div> -->
+    </nav>
+
+    <!-- sections -->
+    <section id="overview" class="p-10">
+      <div class="">
+      <h1 class="text-4xl font-bold mb-4 p-10">Treatment Overview</h1>
+      <div class="flex justify-between">
+        <div class="h-23 w-15 max-w-prose text-lg mt-8 ml-12">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            ipsum distinctio fuga eaque, explicabo atque debitis quibusdam
+            dolorum necessitatibus doloribus ducimus rerum aperiam deleniti
+            natus error nesciunt officia recusandae quas obcaecati qui? Ipsa
+            velit quam officiis consequatur sunt in, deleniti obcaecati minus
+            iusto atque laudantium expedita quia veniam alias numquam
+            perferendis repudiandae blanditiis incidunt quasi.
+          </p>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            veniam a odit voluptates magnam consequatur beatae similique
+            mollitia ipsum rem.
+          </p>
+        </div>
+        <img src="https://img.freepik.com/premium-photo/portrait-mature-male-doctor-wearing-white-coat-standing-hospital-corridor_562859-3453.jpg" class="mr-12 h-96" alt="" loading="lazy"/>
+      </div>
+    </div>
+    </section>
+
+    <hr class="border-2 border-dashed border-blue-400">
+    <section id="Eligibility" class="p-10">
+      <h1 class="text-4xl font-bold mb-4 text-left ml-12">Eligibility</h1>
+      <div class="flex justify-between">
+        <div class="h-23 w-15 max-w-prose text-lg mt-10 ml-12">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            ipsum distinctio fuga eaque, explicabo atque debitis quibusdam
+            dolorum necessitatibus doloribus ducimus rerum aperiam deleniti
+            natus error nesciunt officia recusandae quas obcaecati qui? Ipsa
+            velit quam officiis consequatur sunt in, deleniti obcaecati minus
+            iusto atque laudantium expedita quia veniam alias numquam
+            perferendis repudiandae blanditiis incidunt quasi.
+          </p>
+          <p class="mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            veniam a odit voluptates magnam consequatur beatae similique
+            mollitia ipsum rem.
+          </p>
+        </div>
+        <div class="pr-10" >
+          <form class="form-sec flex flex-col shadow-xl rounded-lg p-5" action="">
+            <p class="font-serif text-blue-500 text-4xl font-bold w-16 m-2 ">Need Help?</p>
+            <p class="font-serif text-gray-500 w-full m-2">Just let us know. We will be happy to assist you.</p>
+            <input class="placeholder:text-gray-400 m-3 p-4 border-2 border-gray-100 focus:border-gray-500" type="text" name="name" id="name" placeholder="Full Name">
+            <input class="placeholder:text-gray-400 m-3 p-4 border-2 border-gray-100 focus:border-gray-500" type="email" name="email" id="email" placeholder="Email">
+            <input class="placeholder:text-gray-400 m-3 p-4 border-2 border-gray-100 focus:border-gray-500" type="tel" name="tel" id="tel" placeholder="Phone Number">
+            <textarea class="placeholder:text-gray-400 m-3 p-4 border-2 border-gray-100 focus:border-gray-50" name="message" id="" cols="10" rows="2" placeholder="Describe Your Treatment Requirements"></textarea>
+            <button class="m-3 p-4 bg-blue-700 hover:bg-blue-800 py-2 px-4 rounded text-white font-bold" type="submit" value="submit">Send Enquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+<section id="FAQ" class="p-10">
+  <div class="max-w-md ml-12 my-32">
+    <h2 class="text-4xl font-bold mb-4 ml-5 ">Treatment FAQs</h2>
+    <!-- Accordion Item 1 -->
+    <div class="mb-4 mt-10 ">
+      <button class="w-full bg-white p-4 text-left border-b border-gray-300">
+        <span class="font-bold">How do I know clinic is verified</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+             class="h-4 w-4 float-right">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="p-4 hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa perspiciatis neque molestias dignissimos aut pariatur.</p>
+      </div>
+    </div>
+
+    <!-- Accordion Item 2 -->
+    <div class="mb-4">
+      <button class="w-full bg-white p-4 text-left border-b border-gray-300">
+        <span class="font-bold">I can't travel Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nisi.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+             class="h-4 w-4 float-right">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="p-4 hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed, nihil quibusdam officia assumenda pariatur quisquam eligendi expedita praesentium eum.</p>
+      </div>
+    </div>
+    <!-- Accordion Item 3 -->
+    <div class="mb-4">
+      <button class="w-full bg-white p-4 text-left border-b border-gray-300">
+        <span class="font-bold">I can't travel Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nisi.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+             class="h-4 w-4 float-right">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      <div class="p-4 hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed, nihil quibusdam officia assumenda pariatur quisquam eligendi expedita praesentium eum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="border-2 border-dashed border-blue-400">
+
+<!-- prep -->
+<section id="preparation">
+  <div class="flex flex-col my-28 text-center ">
+  <h2 class="text-5xl font-bold my-8 ml-5 px-12 ">Preperations</h2>
+  <div class="m-12 text-lg px-20 mx-12 text-left">
+  <p class="mb-5" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum culpa quaerat, et facere ad magni amet nisi repellendus consequuntur odio facilis aut distinctio maiores sed enim, hic eligendi sunt reprehenderit, quod molestiae nobis laudantium! Dolor excepturi cupiditate quasi. Corrupti, ipsum.</p>
+  <p class="mb-5 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, sed:</p>
+  <ul>
+    <li><img src="./images/blueic.png" class=" inline mb-1 size-3 " alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat.
+    </li>
+    <li> <img src="./images/blueic.png" class=" inline mb-1 size-3 " alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum saepe quae eum.</li>
+    <li> <img src="./images/blueic.png" class=" inline mb-1 size-3 " alt="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quibusdam.</li>
+    
+  </ul>
+</div>
+
+</div>
+</section>
+<hr class="border-2 border-dashed border-blue-400">
+
+<section id="patient" class="p-10 ">
+  <div class="mt-10 text-center">
+    <h2 class="text-5xl font-bold mb-8 ">Patient stories & videos</h2>
+    <div class="carousel">
+      <button class="carousel__button carousel__button--left is-hidden">
+        <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="left" />
+      </button>
+      <div class="carousel__track-container">
+        <ul class="carousel__track">
+          <li class="carousel__slide current-slide">
+            <p class="text-gray-500 p-3 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis, similique recusandae quis ipsa perspiciatis!<i class="px-2 text-4xl fa-solid fa-quote-right"></i></p>
+            
+
+            <img
+              class="carousel__images p-3"
+              src="https://media.gq-magazine.co.uk/photos/64410ef0a66108f9a8ca9b12/16:9/w_2560%2Cc_limit/Ryan-Gosling-HEADER.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="carousel__slide">
+            <p class="text-gray-500 p-3 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis, similique recusandae quis ipsa perspiciatis!<i class="px-2 text-4xl fa-solid fa-quote-right"></i></p>
+            
+
+            <img
+              class="carousel__images p-3"
+              src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="carousel__slide">
+            <p class="text-gray-500 p-3 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis, similique recusandae quis ipsa perspiciatis!<i class="px-2 text-4xl fa-solid fa-quote-right"></i></p>
+            
+
+            <img
+              class="carousel__images p-3"
+              src="https://m.media-amazon.com/images/M/MV5BMTg0NDI1NjE0OF5BMl5BanBnXkFtZTcwMzA1NTUxNA@@._V1_.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="carousel__slide">
+            <p class="text-gray-500 p-3 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis, similique recusandae quis ipsa perspiciatis!<i class="px-2 text-4xl fa-solid fa-quote-right"></i></p>
+            
+
+            <img
+              class="carousel__images p-3"
+              src="https://facts.net/wp-content/uploads/2023/07/48-facts-about-brad-pitt-1688829190.jpg"
+              alt="background-image"
+            />
+          </li>
+          <li class="carousel__slide">
+            <p class="text-gray-500 p-3 m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat reiciendis, similique recusandae quis ipsa perspiciatis!<i class="px-2 text-4xl fa-solid fa-quote-right"></i></p>
+            
+
+            <img
+              class="carousel__images p-3"
+              src="https://www.indiewire.com/wp-content/uploads/2018/07/breakingbadformon_wide-22d0f0aa716956d518b391936d3bc323dd7a3848-s900-c85.jpg"
+              alt="background-image"
+            />
+          </li>
+        </ul>
+      </div>
+      <button class="carousel__button carousel__button--right">
+        <img src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png" alt="right" />
+      </button>
+      <div class="carousel__nav">
+        <button class="carousel__indicator current-slide"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+        <button class="carousel__indicator"></button>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="Recommendation">
+  <div class="text-center p-10 my-32">
+    <div class="texts">
+      <p class="text-xl text-red-500 font-serif font-semibold">Hospitals</p>
+      <p class="text-4xl text-black mb-10 font-bold">Recommended <span class="text-blue-400">Hospitals</span></p>
+    </div>
+    <div class="flex flex-row justify-between">
+
+
+      <div class="m-3 rounded-lg flex flex-col items-center justify-center border-2 border-red-500">
+        <img class="rounded-lg" src="https://cdn.sanity.io/images/6r0rnza9/production/b4a014ba73131bdc614af37b8af702e117dd9c5c-1726x1100.jpg?q=100" alt="">
+        <div class="my-5">
+        <p class="text-xl font-semibold">Apollo Hospital</p>
+        <p class="text-base text-red-500 font-serif font-semibold my-3">Banglore</p>
+      </div>
+    </div>
+      <div class="m-3 rounded-lg flex flex-col items-center justify-center border-2 border-red-500">
+        <img class="rounded-lg" src="https://cdn.sanity.io/images/6r0rnza9/production/b4a014ba73131bdc614af37b8af702e117dd9c5c-1726x1100.jpg?q=100" alt="">
+        <div class="my-5">
+        <p class="text-xl font-semibold">Apollo Hospital</p>
+        <p class="text-base text-red-500 font-serif font-semibold my-3">Banglore</p>
+      </div>
+    </div>
+      <div class="m-3 rounded-lg flex flex-col items-center justify-center border-2 border-red-500">
+        <img class="rounded-lg" src="https://cdn.sanity.io/images/6r0rnza9/production/b4a014ba73131bdc614af37b8af702e117dd9c5c-1726x1100.jpg?q=100" alt="">
+        <div class="my-5">
+        <p class="text-xl font-semibold">Apollo Hospital</p>
+        <p class="text-base text-red-500 font-serif font-semibold my-3">Banglore</p>
+      </div>
+    </div>
+
+    </div>
+    <p class="my-10 text-lg">Don't hesitate, contact us for better help and service. <a class="font-bold hover:underline text-red-500" href="">Explore all Hospital</a>
+    </p>
+  </div>
+
+</section>
+
+<!-- section -->
+<section id="GetInTouch">
+  <div class="min-h-32 p-10 text-center" style="background-image: url('./images/getinc2.png'); background-size: cover;">
+    <p class="py-2 mb-3 text-lg text-white">stay healthy and strong to enjoy life</p>
+    <p class="py-2 m-5 text-4xl text-white font-bold">We have team of healthcare experts</p>
+    <div class="flex justify-center">
+      <button
+          class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded transition ease-in-out duration-300 my-7"
+        >
+          Get In Touch
+        </button>
+    </div>
+  </div>
+</section>
+<!-- new section -->
+<footer id="footer" class="">
+  <div class="bg-blue-950 text-white" style="background-image: url('./images/footer2.png'); background-size: cover;">
+    <!-- Important Links Section -->
+    <div class="flex flex-row justify-evenly">
+    <div class="py-8">
+      <h3 class="text-xl font-bold mb-4">Important Links</h3>
+      <ul>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+  
+    <!-- Special Treatment Section -->
+    <div class="py-8">
+      <h3 class="text-xl font-bold mb-4">Special Treatment</h3>
+      <ul>
+        <li><a href="#">Knee Surgery</a></li>
+        <li><a href="#">Urologist</a></li>
+        <li><a href="#">Spine Surgeon</a></li>
+        <li><a href="#">ENT specialist</a></li>
+        <li><a href="#">Cardiologist</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+  
+    <!-- Follow Us Section -->
+    <div class="py-8">
+      <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-gray-300"><i class="text-4xl fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="text-4xl fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-white hover:text-gray-300"><i class="text-4xl fa-brands fa-square-x-twitter"></i></a>
+        <!-- Add social media icons or links here -->
+      </div>
+    </div>
+  </div>
+  
+    <!-- Copyright Info Section -->
+    <div class="py-4 bg-blue-900">
+      <p class="text-center text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+    </div>
+  </div>
+  
+  
+</footer>
+
+    <script src="../src/functionality.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

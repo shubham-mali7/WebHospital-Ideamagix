@@ -1,0 +1,18 @@
+{
+  "name": "proj-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functionality.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " tailwindcss -i ./public/css-styles/input.css -o ./public/css-styles/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}
