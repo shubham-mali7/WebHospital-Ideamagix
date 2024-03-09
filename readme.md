@@ -1,4 +1,4 @@
-# WebHosp
+# WebHospital
 
 ## Overview
 
