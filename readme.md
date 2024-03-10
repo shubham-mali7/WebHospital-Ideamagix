@@ -8,7 +8,7 @@ This is a comprehensive health and wellness website which provides insight on th
 
 - **CSS Styles:** The project utilizes Tailwind CSS for styling. The styles are organized in the `css-styles` directory, including the `output.css` and custom `styles.css`.
 
-- **JavaScript:** The `functionality.js` and `index.js` files in the `src` directory contain the JavaScript code for interactive features.
+- **JavaScript:** The `functionality.js` files contain the JavaScript code for interactive features.
 
 - **Images:** The `images` directory holds the images used throughout the website.
 
