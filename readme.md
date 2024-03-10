@@ -1,4 +1,4 @@
-# WebHosp
+# WebHospital
 
 ## Overview
 
@@ -30,7 +30,7 @@ This is a comprehensive health and wellness website which provides insight on th
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/raviraj4/WebHosp.git`
+1. Clone the repository: `https://github.com/shubham-mali7/WebHospital-Ideamagix.git`
 2. Run `npm run dev` to run tailwind CSS
 3. Open the `index.html` file in a web browser.
 
