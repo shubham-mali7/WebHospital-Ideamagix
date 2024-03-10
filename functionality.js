@@ -103,3 +103,10 @@ dotsNav.addEventListener("click", (e) => {
   updateDots(currentDot, targetDot);
   hideShowArrows(slides, prevButton, nextButton, targetIndex);
 });
+
+
+function Menu(e){
+  let list = document.querySelector('ul')
+
+  e.name === 'menu' ? (e.name = "close", list.classList.add('top-[130px]'),list.classList.add('md:top-[150px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[130px]'), list.classList.remove('md:top-[150px]'), list.classList.remove('opacity-100'))
+}

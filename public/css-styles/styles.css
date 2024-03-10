@@ -1,6 +1,14 @@
 .form-sec{
     width: 400px;
     min-height: 500px;
+    max-width: 400px;
+}
+.prep-tb{
+  min-width: 200px;
+  max-width: 800px;
+}
+.img-te{
+  max-width:400px;
 }
 
 /* carousel start */
@@ -100,3 +108,27 @@ h1 {
   }
 
   /* carousel ends */
+  @media (max-width:760px){
+    .carousel__images {
+        max-width: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        
+      }
+      .carousel {
+        position: relative;
+        height: 400px;
+        width: 270px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+      }
+      .form-sec{
+        max-width: 300px;
+      }
+      .img-te{
+        max-width: 300px;
+      }
+
+  }
